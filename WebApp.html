@@ -89,24 +89,22 @@
     </head>
     <body>
         <div id="main">
-            <h1><m>Pizza shop</m></h1>
+            <h1><m>Pizza Shop</m></h1>
             <img class="i" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQChE7tI5WcOqRkHvtQwdp1fBpI3Pa4qdLopg&usqp=CAU">
             <p>Это магазин вкуснейшей пиццы. Приятного аппетита!</p>
             <button id="buy">Купить</button>
         </div>
-
         <form id="form">
             <input type="text" placeholder="Имя" id="user_name">
             <input type="text" placeholder="Email" id="user_email">
             <input type="text" placeholder="Телефон" id="user_phone">
             <button id="order">Оформить</button>
         </form>
-
         <script src="https://telegram.jrg/js/telegram-web-app.js"></script>
         <script>
             let tg = window.Telegram.WebApp;
-            let buy = document.getElementById("buy")
-            let order = document.getElementById("order")
+            let buy = document.getElementById("buy");
+            let order = document.getElementById("order");
 
             buy.addEventListener("click", () => {
                 document.getElementById("main").style.display = "none";
