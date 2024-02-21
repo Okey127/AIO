@@ -8,10 +8,23 @@
         <link rel="shortcut icon" href="https://static.toiimg.com/thumb/53110049.cms?width=1200&height=900" type="image/x-icon">
         <title>Shop</title>
         <style>
+            @import url('https://fonts.googleleapis.com/css2?family=Montserrat;wght@200;500&display=swap');
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
             #main {
                 width: 100%;
                 padding: 20px;
                 text-align: center;
+            }
+
+            h1 {
+                margin-top: 50px;
+                margin-bottom: 10px;
             }
 
             p {
@@ -26,21 +39,23 @@
                 margin: 30px auto;
             }
 
-            .b {
+            button {
                 display: inline-block;
                 background: #6a00ff;
                 color: #ffffff;
                 padding: 1rem 1.5rem;
-                /*text-decoration: ;*/
                 font-size: 20px;
                 font-weight: 500;
                 cursor: pointer;
                 border-radius: 7px;
+                border: 0;
+                margin-top: 50px;
                 height: 60px;
-                width: 200px
+                width: 200px;
+                transition: all 500ms ease;
             }
 
-            .b:hover {
+            button:hover {
                 background: #ffffff;
                 color: #6a00ff;
             }
@@ -48,6 +63,8 @@
             body {
                 /* Градиент */
                 background: linear-gradient(#6a00ff, #7d7979) fixed;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 200;
             }
 
             #form {
@@ -64,6 +81,10 @@
                 border: 2px solid silver;
                 border-radius: 5px;
             }
+
+            input:focus {
+                border-color: #6a00ff;
+            }
         </style>
     </head>
     <body>
@@ -71,7 +92,7 @@
             <h1><m>Pizza shop</m></h1>
             <img class="i" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQChE7tI5WcOqRkHvtQwdp1fBpI3Pa4qdLopg&usqp=CAU">
             <p>Это магазин вкуснейшей пиццы. Приятного аппетита!</p>
-            <button class='b' id="buy">Купить</button>
+            <button id="buy">Купить</button>
         </div>
 
         <form id="form">
