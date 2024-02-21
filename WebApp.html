@@ -8,21 +8,39 @@
         <link rel="shortcut icon" href="https://static.toiimg.com/thumb/53110049.cms?width=1200&height=900" type="image/x-icon">
         <title>Shop</title>
         <style>
-            .p{
-                color: white;
+            #main {
+                width: 100%;
+                padding: 20px;
+                text-align: center;
             }
-            </style>
-        <style>
-            .b{
+
+            p {
+                color: white;
+                width: 350px;
+                margin: 0 auto;
+            }
+
+            .i {
+                /*width: 150px;
+                height: 150px;*/
+                margin: 30px auto;
+            }
+
+            .b {
                 display: inline-block;
                 background: #7d7979;
                 color: #c1e3fd;
                 padding: 1rem 1.5rem;
                 text-decoration: none;
                 border-radius: 7px;
+                height: 60px;
+                width: 200px
             }
-            </style>
-        <style>
+
+            .b:hover {
+                background: #a19f9f;
+            }
+
             body {
                 /* Градиент */
                 background: linear-gradient(#6a00ff, #7d7979) fixed;
@@ -32,9 +50,10 @@
     <body>
         <div id="main">
             <h1><m>Pizza shop</m></h1>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQChE7tI5WcOqRkHvtQwdp1fBpI3Pa4qdLopg&usqp=CAU">
-            <p class="p">Это магазин вкуснейшей пиццы. Приятного аппетита!</p>
+            <img class="i" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQChE7tI5WcOqRkHvtQwdp1fBpI3Pa4qdLopg&usqp=CAU">
+            <p>Это магазин вкуснейшей пиццы. Приятного аппетита!</p>
             <button class='b' id="buy">Купить</button>
         </div>
+        <script src="https://telegram.jrg/js/telegram-web-app/js"></script>
     </body>
 </html>
